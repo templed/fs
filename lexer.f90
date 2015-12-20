@@ -244,7 +244,7 @@ Contains
     If(ios .ne. 0) Then
        Write(*,*) 'Warning: Non-integral value "',str,'" failed conversion to integer. Attempting recast...'
        Call str2double(str,hope)
-       out = int(hope, INT8)
+       out = int(hope, INT16)
     End If
   End Subroutine str2i16
 
@@ -258,7 +258,7 @@ Contains
     If(ios .ne. 0) Then
        Write(*,*) 'Warning: Non-integral value "',str,'" failed conversion to integer. Attempting recast...'
        Call str2double(str,hope)
-       out = int(hope, INT8)
+       out = int(hope, INT32)
     End If
   End Subroutine str2i32
 
@@ -272,7 +272,7 @@ Contains
     If(ios .ne. 0) Then
        Write(*,*) 'Warning: Non-integral value "',str,'" failed conversion to integer. Attempting to recast...'
        Call str2double(str,hope)
-       out = int(hope, INT8)
+       out = int(hope, INT64)
     End If
   End Subroutine str2i64
 
